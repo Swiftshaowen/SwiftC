@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@drawable/k"
+    >
+    
+      <LinearLayout 
+        android:layout_marginTop="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号："
+            android:textSize="25sp"
+            />
+        <EditText 
+            android:id="@+id/zh_edit_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的邮箱"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="25sp"
+            />
+        <EditText 
+            android:id="@+id/password_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+                    android:gravity="center_horizontal"
+        
+        >
+        
+        
+        <CheckBox 
+            android:id="@+id/checkb_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记 住 密 码"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+    
+    
+    <Button 
+        android:id="@+id/login_id"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="实  名  登  录"
+        android:layout_gravity="center_horizontal"
+        android:onClick="loginclick"
+        android:layout_marginTop="20dp"
+       android:background="@color/btnys"
+       
+        />
+    
+    <Button 
+        android:id="@+id/regesite_id"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="实  名  注  册"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="regesitclick"
+         android:background="@color/btnys"
+        />
+    <Button 
+        android:id="@+id/nimingbtn_id"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="匿  名   登  录 "
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="nimingclcik"
+         android:background="@color/btnys"
+        
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示：如果选择匿名登录，您将没有权限进行留言操作，即进入只读模式。推荐实名注册登录。"
+        android:textColor="@android:color/holo_orange_dark"
+        />
+</LinearLayout>

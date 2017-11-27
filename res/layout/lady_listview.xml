@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="?attr/source_bg"
+      android:orientation="vertical"
+     
+     >
+     
+     <LinearLayout 
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+         <TextView
+            android:id="@+id/fragment_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="嗨，数据正在努力加载中..."
+           />
+    </LinearLayout>
+    
+    
+    <!-- 这是女人栏目下的list -->
+  
+   
+ <ScrollView android:id="@+id/lady_shuaxinscr_id"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        >
+           <LinearLayout 
+        android:id="@+id/lady_lsdlsldlsldl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        
+   <ListView 
+       android:id="@+id/lady_listid"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+        android:visibility="gone"
+       ></ListView>
+   
+   </LinearLayout>
+   
+</ScrollView>
+
+    <LinearLayout 
+        android:id="@+id/lady_llplplplpl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:weightSum="1"
+        >
+           
+        <Button
+            android:id="@+id/lady_shuaxinbtn_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="加  载  更  多" 
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+             android:layout_gravity="bottom"
+             android:gravity="center_horizontal"
+             android:background="@color/btnys"
+             
+            />
+            </LinearLayout>
+</LinearLayout>

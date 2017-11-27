@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   android:background="?attr/source_bg"
+    >
+    <!-- 这个是新闻每一个Item的内容 现在只是测试，先填充一些数据到时候再改 -->
+    <!--   <ImageView 
+        android:id="@+id/mImage1_id"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="matrix"
+        android:layout_margin="5dp"
+        />  
+         -->
+        <com.loopj.android.image.SmartImageView 
+        android:id="@+id/mImage_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        /> 
+    
+    <TextView
+        android:id="@+id/mTxt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/mImage_id"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/mTime_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="11sp"
+        android:layout_below="@id/mTxt_id"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

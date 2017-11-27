@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 第一次启动程序的时候，引导界面的布局 -->
+    <ViewFlipper 
+        android:id="@+id/mViewFlipper_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="3000"
+        >
+        
+        <ImageView 
+          android:id="@+id/a_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a"
+            />
+          <ImageView 
+          android:id="@+id/b_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b"
+            />
+            <ImageView 
+          android:id="@+id/c_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/c"
+            />
+              <ImageView 
+          android:id="@+id/d_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/d"
+            />
+                <ImageView 
+          android:id="@+id/e_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/e"
+            />
+    <!-- <ImageView 
+        android:id="@+id/one_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/one"
+        />
+    
+    <ImageView 
+        android:id="@+id/two_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/two"
+      /> -->
+    </ViewFlipper>
+</LinearLayout>

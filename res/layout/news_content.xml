@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/source_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+     >
+     -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+       android:background="?attr/source_bg"
+        >
+<!--             android:background="#B0C4DE" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+              <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/content_titleid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="我是新闻标题      "
+                    android:textSize="20sp"
+                    android:textStyle="bold" 
+                    
+                    />
+            </LinearLayout>
+            
+              
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                
+         <com.loopj.android.image.SmartImageView 
+        android:id="@+id/content_imgid"
+        android:layout_width="330dp"
+        android:layout_height="280dp"
+        
+        />
+                
+                <!--    <ImageView
+                    android:id="@+id/content_imgid"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="matrix"></ImageView>-->
+                    
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                 <TextView 
+                   android:id="@+id/content_time_id"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   
+                   />
+            </LinearLayout>
+            
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                 <Button 
+                     android:id="@+id/scbtn_id"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/heart_on"
+                     android:onClick="scbtn"
+                     android:layout_marginLeft="20dp"
+                     
+                     />
+                 
+                 
+                 <Button 
+                     android:id="@+id/sharebtn_id"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/share"
+                     android:onClick="sharebtn"
+                     android:layout_marginLeft="20dp"
+                     
+                     />
+
+                 <Button
+                     android:id="@+id/bdbtn_id"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/heart_off"
+                     android:onClick="bdbtn" 
+                      android:layout_marginLeft="20dp"
+                     />
+
+            </LinearLayout>
+
+            
+            
+            
+            
+                    <WebView 
+                        android:id="@+id/mwebview_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        />
+        </LinearLayout>
+    </ScrollView>
+  <!--  </LinearLayout>-->

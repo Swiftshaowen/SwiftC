@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme_Light" >
+         <item name="gray_3_double">@color/gray_3_light</item>
+         <item name="source_bg">@drawable/source_bg_light</item>
+    </style>
+
+</resources>

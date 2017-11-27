@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout 
+        android:id="@+id/asdadsadsd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    
+    <TextView 
+        android:id="@+id/liuyanuser_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:hint="陈少雯给我留言"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView 
+        android:id="@+id/dmsmadlsamdls"
+        android:layout_toRightOf="@id/liuyanuser_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/btnys"
+        android:text="+ 给 我 留 言  :"
+        
+        />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/liuyan_content_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asdadsadsd"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:hint="我是留言的正文内容" />
+    
+    <TextView android:id="@+id/liuyan_tima_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liuyan_content_id"
+        android:layout_marginLeft="200dp"
+         android:hint="2017年4月17日 16:46"
+        
+       />
+
+</RelativeLayout>

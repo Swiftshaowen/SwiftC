@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/source_bg"
+    android:orientation="vertical" >
+
+<!-- 指示器，添加它的一个路径！背景色设置为透明   #C5DAED         -->
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/id_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+         >
+    </com.viewpagerindicator.TabPageIndicator>
+    
+<!-- 引入的是V4下的包，一定要注意引入其他组件时也要设置V4，否则出错！ -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </android.support.v4.view.ViewPager>
+    
+</LinearLayout>
